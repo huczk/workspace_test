@@ -1,0 +1,5 @@
+{
+  "name": "nativeapp",
+  "displayName": "nativeapp",
+  "entryPoint": "./src/index"
+}

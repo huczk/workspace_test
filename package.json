@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "build:webapp": "yarn workspaces foreach -p --include @scanye/shared --include @scanye/webapp run build",
+    "start:nativeapp": "yarn workspaces foreach -p --include @scanye/shared --include @scanye/nativeapp run start",
+    "o": "yarn workspace @scanye/shared start",
+    "s": "yarn workspace @scanye/nativeapp ios",
+    "start:n": "concurrently \"yarn workspace @scanye/shared start\" \"yarn workspace @scanye/nativeapp ios\"",
+    "start:n2": "concurrently \"yarn workspace @scanye/shared start\" \"yarn workspace @scanye/nativeapp2 ios\"",
+    "start": "yarn workspaces foreach -p run start"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "concurrently": "^6.2.0",
+    "eslint": "^7.29.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.3.2"
+  },
+  "dependencies": {
+    "typescript": "^4.3.5"
+  }
+}

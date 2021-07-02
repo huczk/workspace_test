@@ -1,0 +1,17 @@
+{
+  "name": "@scanye/shared",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "build": "tsc -b",
+    "start": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.4"
+  },
+  "dependencies": {
+    "react": "^17.0.2"
+  }
+}

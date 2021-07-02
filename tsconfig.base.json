@@ -1,0 +1,53 @@
+// {
+//   // "include": ["packages/*/src"],
+//   "compilerOptions": {
+//     "declaration": true,
+//     "declarationMap": true,
+//     "target": "es5",
+//     "lib": [
+//       "dom",
+//       "dom.iterable",
+//       "esnext"
+//     ],
+//     "allowJs": true,
+//     "skipLibCheck": true,
+//     "esModuleInterop": true,
+//     "allowSyntheticDefaultImports": true,
+//     "strict": true,
+//     "baseUrl": ".",
+//     "forceConsistentCasingInFileNames": true,
+//     "noFallthroughCasesInSwitch": true,
+//     "module": "esnext",
+//     "moduleResolution": "node",
+//     "resolveJsonModule": true,
+//     "isolatedModules": true,
+//     "noEmit": true,
+//     "jsx": "react-jsx",
+//     // "composite": true,
+//     // "paths": {
+//     //   "@scanye/*": ["packages/*/src"]
+//     // }
+//   }
+// }
+
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+
+    "strict": true,
+
+    "skipLibCheck": true,
+
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es2015",
+
+    "composite": true,
+    "jsx": "react-jsx",
+  }
+}
