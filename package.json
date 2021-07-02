@@ -7,12 +7,11 @@
   },
   "scripts": {
     "build:webapp": "yarn workspaces foreach -p --include @scanye/shared --include @scanye/webapp run build",
-    "start:nativeapp": "yarn workspaces foreach -p --include @scanye/shared --include @scanye/nativeapp run start",
-    "o": "yarn workspace @scanye/shared start",
-    "s": "yarn workspace @scanye/nativeapp ios",
-    "start:n": "concurrently \"yarn workspace @scanye/shared start\" \"yarn workspace @scanye/nativeapp ios\"",
-    "start:n2": "concurrently \"yarn workspace @scanye/shared start\" \"yarn workspace @scanye/nativeapp2 ios\"",
-    "start": "yarn workspaces foreach -p run start"
+    "start:webapp": "yarn workspaces foreach -p --include @scanye/shared --include @scanye/webapp run start",
+    "nativeapp:ios": "yarn workspace @scanye/nativeapp ios",
+    "nativeapp:android": "yarn workspace @scanye/nativeapp android",
+    "start:nativeapp:ios": "concurrently \"yarn workspace @scanye/shared start\" \"yarn nativeapp:ios\"",
+    "start:nativeapp:android": "concurrently \"yarn workspace @scanye/shared start\" \"yarn nativeapp:android\""
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.1",
